@@ -79,7 +79,7 @@ const SiprocalChatbot = () => {
   return (
     <div className="chatbot-container">
       <div className="chatbot-header">
-        <h1>Siprocal</h1>
+        <h1>Siprobot</h1>
       </div>
       <div className="chatbot-wrapper">
         <div className="chatbot-messages">
@@ -121,13 +121,9 @@ const SiprocalChatbot = () => {
 };
 
 // Comprehensive CSS for the chatbot
-const chatbotStyles = `
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+const chatbotStyles = 
 
+`
 body {
   background-color: #f0f2f5;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

@@ -7,8 +7,16 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
+#TO RUN, RUN COMMANDS IN ORDER
+#python -m venv
+#source venv/bin/activate
+#pip install typing, pip install openai, pip install fastapi
+#uvicorn app:app --host 0.0.0.0 --port 80
+#connect postman to YOUR_PORT_IP/chat (ex: 0.0.0.0/chat) through JSON
+#run your query - {"role": "user", "content": "YOUR_QUERY"}
+
 # OpenAI Configuration
-openai.api_key = "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"  # Replace with actual API key
+openai.api_key = "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"  # Replace with actual API key
 ASSISTANT_ID = "asst_r07qFiretE0GMLziRMBYAhgH"  # Replace with actual Assistant ID
 
 class ChatMessage(BaseModel):
